@@ -6,11 +6,6 @@
   --CLOUD: #f4f4fd;
   --OCEAN: #404bbf;
 }
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
 body {
   background-color: var(--WHITE);
@@ -22,7 +17,9 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+  margin: 0 auto;
+}
 p {
   margin: 0;
 }
@@ -57,8 +54,6 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-.container {
 }
 
 /*Header*/
@@ -102,8 +97,12 @@ address {
 /*Section hero*/
 .hero-section {
   background-color: var(--NAVY-BLUE);
+  padding: 188px 0;
 }
 .hero-title {
+  max-width: 496px;
+  margin-bottom: 48px;
+
   color: var(--WHITE);
   font-size: 56px;
   line-height: 1.07;
@@ -111,6 +110,7 @@ address {
   text-align: center;
 }
 .hero-button {
+  padding: 16px 32px;
   background-color: #4d5ae5;
   color: var(--WHITE);
   font-weight: 500;
@@ -124,7 +124,11 @@ address {
 }
 
 /*Section advanteges*/
+.advanteges-section {
+  padding: 120px 0;
+}
 .advantege-title {
+  margin-bottom: 8px;
   color: var(--NAVY-BLUE);
   font-size: 20px;
   font-weight: 500;
@@ -138,9 +142,11 @@ address {
 }
 /*Section Our team*/
 .our-team-section {
+  padding: 120px 0;
   background-color: var(--CLOUD);
 }
 .our-team {
+  margin-bottom: 72px;
   color: var(--NAVY-BLUE);
   font-size: 36px;
   line-height: 1.11; /* 111.111% */
@@ -151,7 +157,11 @@ address {
 .team-list {
   background-color: var(--WHITE);
 }
+.team-photo {
+  margin-bottom: 32px;
+}
 .team-title {
+  margin-bottom: 8px;
   color: var(--NAVY-BLUE);
   font-size: 20px;
   font-weight: 500;
@@ -164,6 +174,9 @@ address {
   letter-spacing: 0.02em;
 }
 /*Section Our portfolio*/
+.our-portfolio-section {
+  padding: 120px 0;
+}
 .portfolio {
   color: var(--NAVY-BLUE);
   font-size: 36px;
@@ -172,7 +185,11 @@ address {
   text-transform: capitalize;
   text-align: center;
 }
+.image-portfolio {
+  margin-bottom: 32px;
+}
 .portfolio-title {
+  margin-bottom: 8px;
   color: var(--NAVY-BLUE);
   font-size: 20px;
   font-weight: 500;
@@ -186,6 +203,7 @@ address {
 }
 /*Footer*/
 .footer {
+  padding: 100px 0;
   color: var(--CLOUD);
   background-color: var(--NAVY-BLUE);
 }
@@ -193,6 +211,7 @@ address {
   color: var(--CLOUD);
 }
 .footer-text {
+  margin-top: 16px;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
 }
