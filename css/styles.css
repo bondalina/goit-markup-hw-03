@@ -48,9 +48,9 @@ img {
   padding: 120px 0;
 }
 .container {
-  max-width: 1440px;
+  max-width: 1158px;
   margin: 0 auto;
-  padding: 0 156px;
+  padding: 0 15px 0 15px;
 }
 .visually-hidden {
   position: absolute;
@@ -66,6 +66,9 @@ img {
 }
 
 /*Header*/
+.header {
+  border-bottom: 1px solid var(--CORNFLOWER);
+}
 .header-inner {
   display: flex;
   justify-content: space-between;
@@ -76,7 +79,6 @@ img {
   display: flex;
   align-items: center;
   flex-grow: 1;
-  gap: 24px;
 }
 .nav-list {
   display: flex;
@@ -89,6 +91,8 @@ img {
   gap: 40px;
 }
 .logo {
+  display: inline-block;
+  margin-right: 76px;
   color: var(--IRIS);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -144,6 +148,8 @@ address {
   text-align: center;
 }
 .hero-button {
+  min-width: 169px;
+  border-radius: 4px;
   display: block;
   margin: 0 auto;
   padding: 16px 32px;
@@ -173,7 +179,9 @@ address {
   display: flex;
   gap: 24px;
 }
-
+.advantege-item {
+  width: calc((100%-72px) / 4);
+}
 .advantege-text {
   color: var(--SLATE);
   line-height: 1.5; /* 150% */
@@ -198,12 +206,12 @@ address {
   gap: 24px;
 }
 .team-item {
-  text-align: center;
-  padding-bottom: 32px;
+  border-radius: 0px 0px 4px 4px;
   background-color: var(--WHITE);
 }
-.team-photo {
-  margin-bottom: 32px;
+.job-position {
+  padding: 32px 0;
+  text-align: center;
 }
 .team-title {
   margin-bottom: 8px;
@@ -233,19 +241,20 @@ address {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  row-gap: 48px;
 }
 .portfolio-item {
   flex-basis: calc((100% - 48px) / 3);
 }
 .product {
+  border-top: none;
   border: 1px solid var(--CORNFLOWER);
-  padding-bottom: 32px;
 }
-.image-portfolio {
-  margin-bottom: 32px;
+.product-item {
+  padding: 32px 16px;
 }
+
 .portfolio-title {
-  padding-left: 16px;
   margin-bottom: 8px;
   color: var(--NAVY-BLUE);
   font-size: 20px;
@@ -254,7 +263,6 @@ address {
   letter-spacing: 0.02em;
 }
 .portfolio-text {
-  padding-left: 16px;
   color: var(--SLATE);
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
@@ -265,12 +273,22 @@ address {
   color: var(--CLOUD);
   background-color: var(--NAVY-BLUE);
 }
+.logo-footer {
+  margin-bottom: 16px;
+  display: inline-block;
+  color: var(--IRIS);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
 .logo-accent-footer {
   color: var(--CLOUD);
 }
 .footer-text {
   width: 264px;
-  margin-top: 16px;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
 }
