@@ -246,12 +246,10 @@ address {
 .portfolio-item {
   flex-basis: calc((100% - 48px) / 3);
 }
-.product {
-  border-top: none;
-  border: 1px solid var(--CORNFLOWER);
-}
 .product-item {
   padding: 32px 16px;
+  border-top: none;
+  border: 1px solid var(--CORNFLOWER);
 }
 
 .portfolio-title {
