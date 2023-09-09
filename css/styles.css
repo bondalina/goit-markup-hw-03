@@ -67,6 +67,7 @@ img {
 
 /*Header*/
 .header {
+  display: flex;
   border-bottom: 1px solid var(--CORNFLOWER);
 }
 .header-inner {
@@ -86,10 +87,20 @@ img {
   flex-grow: 1;
   justify-content: center;
 }
-.contacts-list {
-  display: flex;
-  gap: 40px;
+.nav-link {
+  display: inline-block;
+  padding: 24px 0;
+  color: var(--NAVY-BLUE);
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
 }
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--OCEAN);
+  text-decoration: underline;
+}
+
 .logo {
   display: inline-block;
   margin-right: 76px;
@@ -104,23 +115,14 @@ img {
 .logo-accent {
   color: var(--NAVY-BLUE);
 }
-.nav-link {
-  display: inline-block;
-  padding: 24px 0;
-  color: var(--NAVY-BLUE);
-  font-weight: 500;
-  line-height: 1.5; /* 150% */
-  letter-spacing: 0.02em;
-}
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--OCEAN);
-  text-decoration: underline;
-}
+
 address {
   font-style: normal;
 }
-
+.contacts-list {
+  display: flex;
+  gap: 40px;
+}
 .contacts-link {
   color: var(--SLATE);
   line-height: 1.5;
