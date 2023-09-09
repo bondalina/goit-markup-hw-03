@@ -43,6 +43,14 @@ img {
   display: block;
   max-width: 100%;
 }
+.section {
+  padding: 120px 0;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 156px;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -57,6 +65,28 @@ img {
 }
 
 /*Header*/
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+.nav-list {
+  display: flex;
+  gap: 40px;
+  flex-grow: 1;
+  justify-content: center;
+}
+.contacts {
+  display: flex;
+  gap: 40px;
+}
 .logo {
   color: var(--IRIS);
   font-family: "Raleway", sans-serif;
@@ -70,6 +100,8 @@ img {
   color: var(--NAVY-BLUE);
 }
 .nav-link {
+  display: inline-block;
+  padding: 24px 0;
   color: var(--NAVY-BLUE);
   font-weight: 500;
   line-height: 1.5; /* 150% */
@@ -82,6 +114,10 @@ img {
 }
 address {
   font-style: normal;
+}
+.header-contacts {
+  display: flex;
+  gap: 40px;
 }
 .contact-link {
   color: var(--SLATE);
@@ -110,6 +146,8 @@ address {
   text-align: center;
 }
 .hero-button {
+  display: block;
+  margin: 0 auto;
   padding: 16px 32px;
   background-color: #4d5ae5;
   color: var(--WHITE);
@@ -124,9 +162,7 @@ address {
 }
 
 /*Section advanteges*/
-.advanteges-section {
-  padding: 120px 0;
-}
+
 .advantege-title {
   margin-bottom: 8px;
   color: var(--NAVY-BLUE);
@@ -174,9 +210,7 @@ address {
   letter-spacing: 0.02em;
 }
 /*Section Our portfolio*/
-.our-portfolio-section {
-  padding: 120px 0;
-}
+
 .portfolio {
   color: var(--NAVY-BLUE);
   font-size: 36px;
