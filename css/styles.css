@@ -79,12 +79,10 @@ img {
 .header-nav {
   display: flex;
   align-items: center;
-  flex-grow: 1;
 }
 .nav-list {
   display: flex;
   gap: 40px;
-  flex-grow: 1;
   justify-content: center;
 }
 .nav-link {
