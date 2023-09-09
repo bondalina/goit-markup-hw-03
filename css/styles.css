@@ -86,7 +86,7 @@ img {
   flex-grow: 1;
   justify-content: center;
 }
-.contacts {
+.contacts-list {
   display: flex;
   gap: 40px;
 }
@@ -121,14 +121,14 @@ address {
   font-style: normal;
 }
 
-.contact-link {
+.contacts-link {
   color: var(--SLATE);
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
-.contact-link:hover,
-.contact-link:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--OCEAN);
 }
 
