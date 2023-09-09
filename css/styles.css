@@ -5,6 +5,7 @@
   --WHITE: #fff;
   --CLOUD: #f4f4fd;
   --OCEAN: #404bbf;
+  --CORNFLOWER: #e7e9fc;
 }
 
 body {
@@ -69,13 +70,13 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  gap: 24px;
 }
 .header-nav {
   display: flex;
   align-items: center;
   flex-grow: 1;
-  gap: 40px;
+  gap: 24px;
 }
 .nav-list {
   display: flex;
@@ -115,10 +116,7 @@ img {
 address {
   font-style: normal;
 }
-.header-contacts {
-  display: flex;
-  gap: 40px;
-}
+
 .contact-link {
   color: var(--SLATE);
   line-height: 1.5;
@@ -171,6 +169,11 @@ address {
   line-height: 1.2; /* 120% */
   letter-spacing: 0.02em;
 }
+.advantege-list {
+  display: flex;
+  gap: 24px;
+}
+
 .advantege-text {
   color: var(--SLATE);
   line-height: 1.5; /* 150% */
@@ -191,6 +194,12 @@ address {
   text-align: center;
 }
 .team-list {
+  display: flex;
+  gap: 24px;
+}
+.team-item {
+  text-align: center;
+  padding-bottom: 32px;
   background-color: var(--WHITE);
 }
 .team-photo {
@@ -212,6 +221,7 @@ address {
 /*Section Our portfolio*/
 
 .portfolio {
+  margin-bottom: 72px;
   color: var(--NAVY-BLUE);
   font-size: 36px;
   line-height: 1.11; /* 111.111% */
@@ -219,10 +229,23 @@ address {
   text-transform: capitalize;
   text-align: center;
 }
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.portfolio-item {
+  flex-basis: calc((100% - 48px) / 3);
+}
+.product {
+  border: 1px solid var(--CORNFLOWER);
+  padding-bottom: 32px;
+}
 .image-portfolio {
   margin-bottom: 32px;
 }
 .portfolio-title {
+  padding-left: 16px;
   margin-bottom: 8px;
   color: var(--NAVY-BLUE);
   font-size: 20px;
@@ -231,6 +254,7 @@ address {
   letter-spacing: 0.02em;
 }
 .portfolio-text {
+  padding-left: 16px;
   color: var(--SLATE);
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
@@ -245,6 +269,7 @@ address {
   color: var(--CLOUD);
 }
 .footer-text {
+  width: 264px;
   margin-top: 16px;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
